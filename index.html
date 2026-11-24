@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Militech - официальный сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="top">
+        <div class="logo">MILITECH</div>
+        <button id="menuButton">☰ Меню</button>
+        <nav id="menu">
+            <a href="#about">О компании</a>
+            <a href="#services">Направления</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#faq">Вопросы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hello">
+            <div class="hello-text">
+                <p class="small-title">NUSA // 2077</p>
+                <h1>ТЕХНОЛОГИИ<br>БУДУЩЕГО</h1>
+                <p>Militech - одна из крупнейших корпораций в мире Cyberpunk 2077.</p>
+                <a class="button" href="#about">Узнать больше</a>
+            </div>
+            <img src="https://i.ytimg.com/vi/a4ceut3eA2g/maxresdefault.jpg" alt="Ночной город будущего">
+        </section>
+
+        <section class="info" id="about">
+            <h2>О компании</h2>
+            <p>Militech - американская корпорация, которая занимается военными технологиями и системами безопасности. Компания работает с государственными структурами NUSA.</p>
+        </section>
+
+        <section class="mood">
+            <p>MILITECH INTERNATIONAL</p>
+            <h2>«БУДУЩЕЕ СОЗДАЁТСЯ СЕГОДНЯ»</h2>
+            <p>Надёжность. Технологии. Развитие.</p>
+        </section>
+
+        <section class="content" id="services">
+            <h2>Наши направления</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">01</div>
+                    <h3>Технологии</h3>
+                    <p>Разработка современного оборудования.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">02</div>
+                    <h3>Безопасность</h3>
+                    <p>Системы защиты и наблюдения.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">03</div>
+                    <h3>Разработка</h3>
+                    <p>Новые решения для будущего.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <h2>Как мы работаем</h2>
+            <div class="steps">
+                <div><span>⌕</span><h3>1. Анализ</h3><p>Изучаем задачу.</p></div>
+                <div><span>◇</span><h3>2. Разработка</h3><p>Подбираем решение.</p></div>
+                <div><span>✓</span><h3>3. Результат</h3><p>Проверяем работу.</p></div>
+            </div>
+        </section>
+
+        <section class="content" id="gallery">
+            <h2>Галерея</h2>
+            <div class="slider">
+                <img id="slideImage" src="https://avatars.mds.yandex.net/i?id=b064f5eebde432a6c59e53db2a4f36d6_l-9242682-images-thumbs&n=13" alt="Изображение солдат Militech">
+                <div class="slider-bottom">
+                    <button id="prev">Назад</button>
+                    <span id="slideNumber">1 / 3</span>
+                    <button id="next">Вперёд</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <h2>Наш принцип</h2>
+            <p>(Наведи курсор на карточку).</p>
+            <div class="flip-card">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img src="https://static.wikia.nocookie.net/edgerunner/images/1/13/Militech.png/revision/latest/scale-to-width-down/1200?cb=20220422114104" alt="корп">
+                        <h3>ОТВЕТСТВЕННОСТЬ</h3>
+                    </div>
+                    <div class="flip-back">
+                        <h3>Наш принцип</h3>
+                        <p>Мы ценим точность, профессионализм и внимание к деталям.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content calculator">
+            <h2>Калькулятор стоимости</h2>
+            <p>Укажите количество единиц оборудования.</p>
+            <label for="quantity">Количество:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <p>Цена за одну единицу: 100 евродолларов</p>
+            <button id="calculate">Рассчитать</button>
+            <h3 id="result">Итого: 100 кредитов</h3>
+        </section>
+
+        <section class="content" id="faq">
+            <h2>Частые вопросы</h2>
+            <div class="faq-item">
+                <button class="question">Чем занимается Militech? <span>+</span></button>
+                <p class="answer">Компания известна военными технологиями и системами безопасности.</p>
+            </div>
+            <div class="faq-item">
+                <button class="question">Где работает компания? <span>+</span></button>
+                <p class="answer">Militech действует во всех странах мира.</p>
+            </div>
+            <div class="faq-item">
+                <button class="question">Это настоящий сайт компании? <span>+</span></button>
+                <p class="answer">ДООО.доододо..... да..</p>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Связаться с нами</h2>
+            <form id="contactForm">
+                <label for="name">Имя</label>
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <button type="submit">Отправить</button>
+                <p id="formMessage">Форма для демонстрации.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>MILITECH INTERNATIONAL | 2077</p>
+        <p>Учебный проект если шо бтв</p>
+        <a href="#top">Наверх ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

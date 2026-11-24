@@ -1,0 +1,323 @@
+/* Основные настройки страницы */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #101722;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background: #080e17;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: lab(96.1% -19.65 93.73);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#menuButton {
+    background: #fffb00;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 9px 14px;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    width: 100%;
+    padding-top: 18px;
+}
+
+nav.show {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fffb00;
+}
+
+.hello {
+    padding: 65px 8%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.hello-text {
+    flex: 1;
+}
+
+.hello img {
+    width: 50%;
+    border: 2px solid #34465c;
+}
+
+.small-title {
+    color: #fffb00;
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+h2 {
+    color: #fffb00;
+    margin-top: 0;
+}
+
+.button, button {
+    display: inline-block;
+    background: #fffb00;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover, button:hover {
+    background: #c7a900;
+}
+
+.info, .content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 45px 25px;
+}
+
+.info p {
+    max-width: 700px;
+}
+
+.mood {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(rgba(5, 10, 18, .78), rgba(5, 10, 18, .85)), url("assets/slide-1.svg");
+    background-size: cover;
+    background-position: center;
+    border-top: 2px solid #fffb00;
+    border-bottom: 2px solid #fffb00;
+}
+
+.mood p:first-child {
+    color: #fffb00;
+    letter-spacing: 3px;
+}
+
+.mood h2 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.cards, .steps {
+    display: flex;
+    gap: 18px;
+}
+
+.card, .steps div {
+    flex: 1;
+    background: #1a2636;
+    border: 1px solid #34465c;
+    padding: 20px;
+}
+
+.card-icon, .steps span {
+    color: #fffb00;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card h3, .steps h3 {
+    margin-bottom: 5px;
+}
+
+.card p, .steps p {
+    color: #b9c2ce;
+    margin-bottom: 0;
+}
+
+.slider {
+    max-width: 750px;
+    margin: 20px auto 0;
+}
+
+.slider img {
+    display: block;
+    width: 100%;
+    border: 2px solid #34465c;
+}
+
+.slider-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.flip-card {
+    width: 320px;
+    max-width: 100%;
+    height: 210px;
+    margin: 20px auto;
+    perspective: 800px;
+}
+
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner, .flip-card:focus-within .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid #fffb00;
+    text-align: center;
+}
+
+.flip-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-front h3 {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+.flip-back {
+    background: #1a2636;
+    transform: rotateY(180deg);
+    padding: 35px 20px;
+}
+
+.calculator {
+    background: #1a2636;
+    border: 1px solid #34465c;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.calculator input, .contact input {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    margin: 7px 0 15px;
+    background: #0d1420;
+    color: rgb(255, 255, 255);
+    border: 1px solid #53647a;
+}
+
+.faq-item {
+    border-bottom: 1px solid #53647a;
+}
+
+.question {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer {
+    display: none;
+    padding: 10px 15px;
+    color: #c4ccd6;
+}
+
+.answer.open {
+    display: block;
+}
+
+.contact {
+    background: #1a2636;
+    padding: 45px 8%;
+}
+
+.contact form {
+    max-width: 500px;
+}
+
+.contact label {
+    display: block;
+}
+
+#formMessage {
+    color: #b9c2ce;
+    font-size: 14px;
+}
+
+footer {
+    background: #080e17;
+    padding: 25px 8%;
+    text-align: center;
+    color: #aeb8c5;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fffb00;
+}
+
+/* Для небольших экранов */
+@media (max-width: 700px) {
+    .hello {
+        flex-direction: column;
+        padding: 40px 6%;
+    }
+
+    .hello img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .cards, .steps {
+        flex-direction: column;
+    }
+
+    .mood h2 {
+        font-size: 23px;
+    }
+}
