@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Militech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="top">
+        <a class="brand" href="index.html" aria-label="Militech - главная">
+            <img src="https://avatars.mds.yandex.net/i?id=b5f850832291f71768ebd468e4ea9b2c_l-9068512-images-thumbs&n=13" alt="Militech" onerror="this.onerror=null;this.src='assets/images/militech-logo-fallback.svg'">
+        </a>
+        <button id="menuButton" aria-expanded="false" aria-controls="menu">☰ Меню</button>
+        <nav id="menu">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О компании</a>
+            <a href="index.html#services">Направления</a>
+            <a class="active" href="gallery.html">Галерея</a>
+            <a href="index.html#faq">Вопросы</a>
+            <a href="index.html#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="small-title">MILITECH ARCHIVE // 2077</p>
+            <h1>ГАЛЕРЕЯ</h1>
+            <p>Корпоративная архитектура и объекты Militech в Night City.</p>
+        </section>
+
+        <section class="content">
+            <h2>Материалы Militech</h2>
+            <div class="slider">
+                <img id="slideImage"
+                     src="https://images.stopgame.ru/uploads/images/653218/form/2025/09/11/r1694x948/3SNCA1moVvb9svLCtgBhhg/336bebb7bcadac49b8e9928d26b9ab52.jpg"
+                     alt="Башня Militech в Corporate Plaza ночью"
+                     onerror="this.onerror=null;this.src='assets/images/image-unavailable.svg'">
+                <div class="slider-bottom">
+                    <button id="prev">Назад</button>
+                    <span id="slideNumber">1 / 3</span>
+                    <button id="next">Вперёд</button>
+                </div>
+                <div class="gallery-caption">
+                    <h3 id="slideTitle">Региональный офис</h3>
+                    <p id="slideDescription">Башня Militech, освещённая неоновыми линиями среди небоскрёбов Night City.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <h2>Корпоративный центр</h2>
+            <div class="about-panel">
+                <p>Офис Militech в Corporate Plaza - одна из заметных корпоративных построек города. Он отражает масштаб компании и её стремление сохранять присутствие в ключевых районах Night City.</p>
+                <a class="text-link" href="about.html">Подробнее о компании →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>MILITECH INTERNATIONAL | 2077</p>
+        <p>Cyberpunk 2077</p>
+        <a href="#top">Наверх ↑</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

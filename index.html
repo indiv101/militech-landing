@@ -8,12 +8,15 @@
 </head>
 <body>
     <header id="top">
-        <div class="logo">MILITECH</div>
-        <button id="menuButton">☰ Меню</button>
+        <a class="brand" href="index.html" aria-label="Militech - главная">
+            <img src="https://avatars.mds.yandex.net/i?id=b5f850832291f71768ebd468e4ea9b2c_l-9068512-images-thumbs&n=13" alt="Militech" onerror="this.onerror=null;this.src='assets/images/militech-logo-fallback.svg'">
+        </a>
+        <button id="menuButton" aria-expanded="false" aria-controls="menu">☰ Меню</button>
         <nav id="menu">
-            <a href="#about">О компании</a>
+            <a class="active" href="index.html">Главная</a>
+            <a href="about.html">О компании</a>
             <a href="#services">Направления</a>
-            <a href="#gallery">Галерея</a>
+            <a href="gallery.html">Галерея</a>
             <a href="#faq">Вопросы</a>
             <a href="#contact">Контакты</a>
         </nav>
@@ -24,15 +27,18 @@
             <div class="hello-text">
                 <p class="small-title">NUSA // 2077</p>
                 <h1>ТЕХНОЛОГИИ<br>БУДУЩЕГО</h1>
-                <p>Militech - одна из крупнейших корпораций в мире Cyberpunk 2077.</p>
-                <a class="button" href="#about">Узнать больше</a>
+                <p>Militech - крупная корпорация, чьи разработки меняют рынок технологий и безопасности.</p>
+                <a class="button" href="about.html">Узнать больше</a>
             </div>
-            <img src="https://i.ytimg.com/vi/a4ceut3eA2g/maxresdefault.jpg" alt="Ночной город будущего">
+            <img src="https://i0.wp.com/thepathwitcher.blog/wp-content/uploads/2024/09/cyberpunk-social-commentary-image-1.png?resize=1024%2C576&ssl=1"
+                 alt="Корпоративная башня Militech в Corporate Plaza" onerror="this.onerror=null;this.src='assets/images/image-unavailable.svg'">
         </section>
 
         <section class="info" id="about">
             <h2>О компании</h2>
-            <p>Militech - американская корпорация, которая занимается военными технологиями и системами безопасности. Компания работает с государственными структурами NUSA.</p>
+            <p>Militech International Armaments - одна из заметных корпораций мира Cyberpunk 2077. Она известна разработкой военных технологий, специализированного оборудования и систем безопасности.</p>
+            <p>Компания тесно связана с государственными структурами NUSA. В Night City её региональный офис находится в деловом районе Corporate Plaza.</p>
+            <a class="text-link" href="about.html">Подробнее о компании →</a>
         </section>
 
         <section class="mood">
@@ -47,17 +53,17 @@
                 <div class="card">
                     <div class="card-icon">01</div>
                     <h3>Технологии</h3>
-                    <p>Разработка современного оборудования.</p>
+                    <p>Разработка специализированного оборудования и инженерных решений для крупных заказчиков.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon">02</div>
                     <h3>Безопасность</h3>
-                    <p>Системы защиты и наблюдения.</p>
+                    <p>Комплексы наблюдения, контроль доступа и защита важных объектов NUSA.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon">03</div>
-                    <h3>Разработка</h3>
-                    <p>Новые решения для будущего.</p>
+                    <h3>Исследования</h3>
+                    <p>Испытания новых технологий, модернизация систем и техническая поддержка.</p>
                 </div>
             </div>
         </section>
@@ -65,37 +71,20 @@
         <section class="content">
             <h2>Как мы работаем</h2>
             <div class="steps">
-                <div><span>⌕</span><h3>1. Анализ</h3><p>Изучаем задачу.</p></div>
-                <div><span>◇</span><h3>2. Разработка</h3><p>Подбираем решение.</p></div>
-                <div><span>✓</span><h3>3. Результат</h3><p>Проверяем работу.</p></div>
-            </div>
-        </section>
-
-        <section class="content" id="gallery">
-            <h2>Галерея</h2>
-            <div class="slider">
-                <img id="slideImage" src="https://avatars.mds.yandex.net/i?id=b064f5eebde432a6c59e53db2a4f36d6_l-9242682-images-thumbs&n=13" alt="Изображение солдат Militech">
-                <div class="slider-bottom">
-                    <button id="prev">Назад</button>
-                    <span id="slideNumber">1 / 3</span>
-                    <button id="next">Вперёд</button>
+                <div>
+                    <span>⌕</span>
+                    <h3>1. Анализ</h3>
+                    <p>Изучаем задачу заказчика, условия объекта и требования к надёжности.</p>
                 </div>
-            </div>
-        </section>
-
-        <section class="content">
-            <h2>Наш принцип</h2>
-            <p>(Наведи курсор на карточку).</p>
-            <div class="flip-card">
-                <div class="flip-inner">
-                    <div class="flip-front">
-                        <img src="https://static.wikia.nocookie.net/edgerunner/images/1/13/Militech.png/revision/latest/scale-to-width-down/1200?cb=20220422114104" alt="корп">
-                        <h3>ОТВЕТСТВЕННОСТЬ</h3>
-                    </div>
-                    <div class="flip-back">
-                        <h3>Наш принцип</h3>
-                        <p>Мы ценим точность, профессионализм и внимание к деталям.</p>
-                    </div>
+                <div>
+                    <span>◇</span>
+                    <h3>2. Разработка</h3>
+                    <p>Подбираем оборудование, проектируем систему и согласуем решение.</p>
+                </div>
+                <div>
+                    <span>✓</span>
+                    <h3>3. Проверка</h3>
+                    <p>Проводим испытания, проверяем работу систем и готовим их к эксплуатации.</p>
                 </div>
             </div>
         </section>
@@ -113,16 +102,20 @@
         <section class="content" id="faq">
             <h2>Частые вопросы</h2>
             <div class="faq-item">
-                <button class="question">Чем занимается Militech? <span>+</span></button>
-                <p class="answer">Компания известна военными технологиями и системами безопасности.</p>
+                <button class="question" aria-expanded="false">Чем занимается Militech? <span>+</span></button>
+                <p class="answer">Militech известна как крупный поставщик технологий и оборудования для военных и государственных структур. Компания также работает в сфере корпоративной безопасности и технического обслуживания.</p>
             </div>
             <div class="faq-item">
-                <button class="question">Где работает компания? <span>+</span></button>
-                <p class="answer">Militech действует во всех странах мира.</p>
+                <button class="question" aria-expanded="false">Почему компанию связывают с NUSA? <span>+</span></button>
+                <p class="answer">У Militech давние контракты с государственными и силовыми структурами. К 2077 году интересы корпорации и NUSA тесно переплетены, поэтому её влияние выходит далеко за пределы обычного бизнеса.</p>
             </div>
             <div class="faq-item">
-                <button class="question">Это настоящий сайт компании? <span>+</span></button>
-                <p class="answer">ДООО.доододо..... да..</p>
+                <button class="question" aria-expanded="false">Где находится офис Militech в Night City? <span>+</span></button>
+                <p class="answer">Региональный офис Militech расположен в Corporate Plaza, в деловом центре Night City. Здание заметно выделяется среди крупных корпоративных башен района.</p>
+            </div>
+            <div class="faq-item">
+                <button class="question" aria-expanded="false">Это настоящий сайт компании? <span>+</span></button>
+                <p class="answer">Да, это официальный сайт корпорации Militech.</p>
             </div>
         </section>
 
@@ -141,10 +134,9 @@
 
     <footer>
         <p>MILITECH INTERNATIONAL | 2077</p>
-        <p>Учебный проект если шо бтв</p>
+        <p>Cyberpunk 2077</p>
         <a href="#top">Наверх ↑</a>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
